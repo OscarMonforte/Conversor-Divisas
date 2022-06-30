@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+h1,
+input,
+button,
+select,
+p,
+div {
+    padding: 10px;
+}
+
+input {
+    font-size: 4em;
+    text-align: center;
+    display: block;
+    border: none;
+    background-color: #fff;
+}
+
+select {
+    float: right;
+}
+
+select,
+p {
+    font-size: 1.5em;
+    display: inline-block;
+    text-align: left;
+    border: none;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+.contenedor-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#conversionActual {
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    color: #888;    
+    position: sticky;
+    top: 0;
+}
+
+#contenedorBanderas,
+#contenedorBanderas > div > p {
+    background-color: #eee;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: start;
+    align-items: center;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.sombra {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 1000px) {
+    .contenedor-grid {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contenedor-grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor-grid {
+        grid-template-columns: auto;
+    }
+}
